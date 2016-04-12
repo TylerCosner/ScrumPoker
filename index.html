@@ -1,0 +1,36 @@
+<div>
+	<span ng-chontroller="scrumPokerController as scrumPoker">
+		<div id="content">
+			<div class="row"
+			ng-repeat="player in scrumPoker.players">
+				
+			</div>
+		</div>
+		<div id="toolbar">
+			<div class="card"
+			ng-repeat="card in scrumPoker.cards"
+			ng-style="{width: 1600 / scrumPoker.cards.length}">
+				{{card.number}}
+			</div>
+		</div>
+	</span>
+	<span ng-controller="scrumPokerSettingsController as settings">
+		<form id="sideBar">
+			<div>
+				<label>
+					Are you also effort pointing?
+				</label>
+				<input type="radio" name="" value="">
+			</div>
+			<div>
+				<label>
+					Would you like to auto-flip the cards after everyone has voted?
+				</label>
+				<input type="radio" name="" value="">
+				<input type="radio" name="" value="">
+				<input type="radio" name="" value="">
+				<input type="radio" name="" value="">
+			</div>
+		</form>
+	</span>
+<div>

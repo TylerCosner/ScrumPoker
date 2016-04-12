@@ -1,0 +1,25 @@
+{
+  "name": "ScrumPoker",
+  "version": "1.0.0",
+  "description": "Planning Poker... except better",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerCosner/ScrumPoker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerCosner/ScrumPoker/issues"
+  },
+  "homepage": "https://github.com/TylerCosner/ScrumPoker#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "lodash": "~4.8.2"
+  }
+}
