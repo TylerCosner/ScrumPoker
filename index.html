@@ -1,5 +1,5 @@
-<div>
-	<span ng-chontroller="scrumPokerController as scrumPoker">
+<div ng-app="ScrumPoker" ng-chontroller="scrumPokerController as scrumPoker">
+	<span>
 		<div id="content">
 			<div class="row"
 			ng-repeat="player in scrumPoker.players">
@@ -14,13 +14,30 @@
 			</div>
 		</div>
 	</span>
-	<span ng-controller="scrumPokerSettingsController as settings">
+	<span>
+		<div id="score">
+			<h1>{{settings}}</h1>
+		</div>
 		<form id="sideBar">
 			<div>
 				<label>
 					Are you also effort pointing?
 				</label>
-				<input type="radio" name="" value="">
+				<label>
+					<input type="radio" ng-model="" value="true">
+				</label>
+				<label>
+					<input type="radio" ng-model="" value="false">
+				</label>
+			</div>
+			<div ng-hide="settings.inGame">
+				<label>
+					Choose your card set:
+				</label>
+				<label ng-repeat="">
+					<input type="radio" ng-model="settings.cardSet" ng-value="0">
+
+				</label>
 			</div>
 			<div>
 				<label>
@@ -28,8 +45,27 @@
 				</label>
 				<input type="radio" name="" value="">
 				<input type="radio" name="" value="">
+			</div>
+			<div>
+				<label>
+					Would you like to allow players to change their vote after reveal?
+				</label>
 				<input type="radio" name="" value="">
 				<input type="radio" name="" value="">
+			</div>
+			<div>
+				<label>
+					Would you like to calculate the score?
+				</label>
+				<input type="radio" name="" value="">
+				<input type="radio" name="" value="">
+			</div>
+			<div>
+				<label>
+					Would you like a story timer?
+				</label>
+				<input type="radio" name="" value="">
+				<input type="radio" name="" value="">	
 			</div>
 		</form>
 	</span>
